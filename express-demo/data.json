@@ -1,0 +1,17 @@
+{
+    "123": {
+        "name": "Oil Filter",
+        "price": 42,
+        "qty": 10
+    },
+    "456": {
+        "name": "Gas Filter",
+        "price": 53,
+        "qty": 114
+    },
+    "789": {
+        "name": "Water tank",
+        "price": 88,
+        "qty": 36
+    }
+}
