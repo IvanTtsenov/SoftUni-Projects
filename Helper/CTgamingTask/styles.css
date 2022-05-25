@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #15171d;
+  text-shadow: 0px 0px 13px rgba(150, 150, 150, 1);
+}
+
+header {
+  width: 100vw;
+  height: 300px;
+  background: url("https://www.palmsbet.com/images/banners/newspinsdekstoppp_bg.png");
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  margin: 10px
+}
+
+.double {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.article.double .articleImageWrapper {
+  height: 91.5%;
+}
+
+.article {
+  position: relative;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 9px;
+}
+
+.article:hover::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.8;
+}
+
+
+.article:hover .buttons {
+  display: flex;
+  z-index: 2;
+}
+
+.article:hover .mainContentWrapper {
+  position: absolute;
+  top: 0;
+  background-color: unset;
+  z-index: 2;
+}
+
+.article .articleImageWrapper {
+  width: 100%;
+}
+
+.article .articleImageWrapper .articleImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article .mainContentWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b1e25;
+  color: #a0a9b8;
+  font-weight: bold;
+  width: 100%;
+  padding: 8px;
+}
+
+.mainContentWrapper i {
+  color: #0795a1d3;
+}
+
+.buttons {
+  position: absolute;
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #2e3546;
+  bottom: 0;
+}
+
+.buttons a {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: inherit;
+  color: #e1e8f5;
+}
+
+.buttons a:hover {
+  background-color: #2eb9ff;
+}
